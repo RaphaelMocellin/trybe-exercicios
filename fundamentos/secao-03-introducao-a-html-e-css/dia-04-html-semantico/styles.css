@@ -1,0 +1,56 @@
+      h1 {
+        text-align: center;
+      }
+
+      .first {
+        display:block;
+        background-color: rgb(235, 200, 84);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 200px;
+        margin: auto;
+      }
+
+      .second {
+        display: inline-block;
+        /* margin-left: 200px; */
+        background-color: rgb(219, 219, 219);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 300px;
+      }
+
+      .third {
+        display: inline-block;
+        margin: auto;
+        background-color: rgb(170, 142, 106);
+        font-size: 20px;
+        height: 50px;
+        text-align: center;
+        width: 300px;
+      }
+
+      .podium {
+        margin: auto;
+      }
+
+      main, h3, li {
+        text-align: center;
+      }
+
+      main li {
+        display: inline;
+      }
+
+      footer {
+        background-color: rgb(232, 233, 240);
+        color: rgb(80, 79, 79);
+        text-align: center;
+        height: 35px;
+      }
+
+      footer p {
+        padding: 8px;
+      }
