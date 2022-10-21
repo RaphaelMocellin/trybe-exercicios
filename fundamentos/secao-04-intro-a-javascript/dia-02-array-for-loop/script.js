@@ -1,4 +1,6 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// let numbers = [70, 8, 100, 2];
+
 
 // // Exercício 1 - Imprima todos os valores
 // for (let number of numbers) {
@@ -45,12 +47,28 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 5 - Qual maior valor do array
 
-let maiorValor = 0;
+// let maiorValor = 0;
+
+// for (number of numbers) {
+//     if (number > maiorValor) {
+//         maiorValor = number;
+//     }
+// }
+
+// console.log(maiorValor);
+
+// Exercício 6 - Quantos são impares?
+
+let qtdImpares = 0;
 
 for (number of numbers) {
-    if (number > maiorValor) {
-        maiorValor = number;
-    }
+  if (number % 2 !== 0) {
+    qtdImpares += 1;
+  }
 }
 
-console.log(maiorValor);
+if (qtdImpares === 0) {
+  console.log("Nenhum valor ímpar encontrado");
+} else {
+  console.log(qtdImpares);
+}
