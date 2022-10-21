@@ -74,12 +74,22 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 7 - Encontrar o menor valor e imprimir
 
-let menorValor = numbers[0];
+// let menorValor = numbers[0];
 
-for (number of numbers) {
-  if (number < menorValor) {
-    menorValor = number;
-  }
-}
+// for (number of numbers) {
+//   if (number < menorValor) {
+//     menorValor = number;
+//   }
+// }
 
-console.log(menorValor);
+// console.log(menorValor);
+
+// Exercício 8 - Criar um array de 1 a 25 e imprimi-lo
+
+// let until25 = [];
+
+// for (let i = 1; i <= 25; i += 1) {
+//     until25.push(i);
+// }
+
+// console.log(until25);
