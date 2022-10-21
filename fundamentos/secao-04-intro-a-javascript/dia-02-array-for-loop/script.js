@@ -86,10 +86,14 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 8 - Criar um array de 1 a 25 e imprimi-lo
 
-// let until25 = [];
+let array25 = [];
 
-// for (let i = 1; i <= 25; i += 1) {
-//     until25.push(i);
-// }
+for (let i = 1; i <= 25; i += 1) {
+  array25.push(i);
+}
 
-// console.log(until25);
+console.log(array25);
+
+for (number of array25) {
+    console.log(number / 2);
+}
