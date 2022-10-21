@@ -1,7 +1,6 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // let numbers = [70, 8, 100, 2];
 
-
 // // Exercício 1 - Imprima todos os valores
 // for (let number of numbers) {
 //     console.log(number);
@@ -59,16 +58,28 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 6 - Quantos são impares?
 
-let qtdImpares = 0;
+// let qtdImpares = 0;
+
+// for (number of numbers) {
+//   if (number % 2 !== 0) {
+//     qtdImpares += 1;
+//   }
+// }
+
+// if (qtdImpares === 0) {
+//   console.log("Nenhum valor ímpar encontrado");
+// } else {
+//   console.log(qtdImpares);
+// }
+
+// Exercício 7 - Encontrar o menor valor e imprimir
+
+let menorValor = numbers[0];
 
 for (number of numbers) {
-  if (number % 2 !== 0) {
-    qtdImpares += 1;
+  if (number < menorValor) {
+    menorValor = number;
   }
 }
 
-if (qtdImpares === 0) {
-  console.log("Nenhum valor ímpar encontrado");
-} else {
-  console.log(qtdImpares);
-}
+console.log(menorValor);
