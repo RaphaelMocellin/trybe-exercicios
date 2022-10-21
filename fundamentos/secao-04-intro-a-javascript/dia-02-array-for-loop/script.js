@@ -94,6 +94,8 @@ for (let i = 1; i <= 25; i += 1) {
 
 console.log(array25);
 
+// Exercício 9 - Imprimindo o resultado da divisão de cada um por 2
+
 for (number of array25) {
     console.log(number / 2);
 }
