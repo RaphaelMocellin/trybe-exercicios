@@ -50,18 +50,27 @@
 // Imprima no console seguindo o exemplo: "A pessoa é maior de idade".
 // Bônus: Crie a condição utilizando operador ternário.
 
-let age = 10;
+// let age = 10;
 
 // if (age >= 18) {
 //     console.log("A pessoa pé maior de idade")
 // }
 
-age >= 18 ? console.log("A pessoa é maior de idade") : console.log("menor de idade");
+// age >= 18 ? console.log("A pessoa é maior de idade") : console.log("menor de idade");
 
 // 5 - Crie um algoritmo que recebe a idade de Carolzita , Murilo e Baêta e imprime quem é a pessoa mais nova no formato:
 // "Pessoa" é a mais nova.
 
-// let carolzita = 26;
-// let murilo = 30;
-// let baeta = 35;
+let carolzita = 36;
+let murilo = 40;
+let baeta = 35;
 
+if (carolzita < murilo && carolzita < baeta) {
+    console.log("Carolzita é a mais nova!")
+} else if (murilo < carolzita && murilo < baeta) {
+    console.log("Murilo é o mais novo")
+} else if (baeta < carolzita && baeta < murilo) {
+    console.log("Baêta é a mais nova")
+} else {
+    console.log("Alguém tem idade igual!")
+}
