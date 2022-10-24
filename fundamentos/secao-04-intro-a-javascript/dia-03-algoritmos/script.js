@@ -40,3 +40,19 @@
 
 // console.log("A maior palavra é: " + bigger);
 // console.log("A menor palavra é: " + smaller);
+
+let maiorPrimo = 0;
+
+for (let dividendo = 2; dividendo <= 50; dividendo += 1) {
+    let primo = true;
+    for (let divisor = 2; divisor < dividendo; divisor += 1) {
+        if (dividendo % divisor === 0) {
+            primo = false;
+        }
+    }
+    if (primo === true) {
+        maiorPrimo = dividendo;
+    }
+}
+
+console.log(maiorPrimo);
