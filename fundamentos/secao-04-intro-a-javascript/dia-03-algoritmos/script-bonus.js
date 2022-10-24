@@ -24,12 +24,19 @@
 // Exercício Bonus 3
 
 let n = 5;
-let asteriscos = '';
+let symbol = '*';
+let inputLine = '';
+let inputPosition = n - 1;
 
-for (let i = 1; i <= n; i += 1) {
-    asteriscos = asteriscos + '*';
-}
-
-for (let i = 1; i <=n; i += 1) {
-    console.log(asteriscos);
-}
+for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
+  for (let columnIndex = 0; columnIndex < n; columnIndex += 1) {
+    if (columnIndex < inputPosition) {
+      inputLine = inputLine + ' ';
+    } else {
+      inputLine = inputLine + symbol;
+    }
+  }
+  console.log(inputLine);
+  inputLine = '';
+  inputPosition -= 1;
+};
