@@ -12,4 +12,11 @@ let info = {
 
 info.recorrente = "Sim";
 
-console.log(info);
+// console.log(info);
+
+// Exercício 3 - Faça um for/in mostrando todas as keys do obj
+
+for (let key in info) {
+    console.log(key);
+}
+
