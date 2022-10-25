@@ -63,21 +63,26 @@
 
 // Exercício 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
 
-let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
-function biggestName(array) {
+// function biggestName(array) {
 
-    let biggest = arrayTest[0];
+//     let biggest = arrayTest[0];
 
-    for (let i = 0; i < array.length; i += 1) {
-        for (let i2 = 0; i2 < array.length; i2 += 1) {
-            if (array[i].length > array[i2].length && array[i].length > biggest.length) {
-                biggest = array[i];
-            }
-        }
-    }
+//     for (let i = 0; i < array.length; i += 1) {
+//         for (let i2 = 0; i2 < array.length; i2 += 1) {
+//             if (array[i].length > array[i2].length && array[i].length > biggest.length) {
+//                 biggest = array[i];
+//             }
+//         }
+//     }
 
-    return console.log(biggest);
-}
+//     return console.log(biggest);
+// }
 
-biggestName(arrayTest);
+// biggestName(arrayTest);
+
+// Exercício 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+
+// let arraytest = [2, 3, 2, 5, 8, 2, 3];
+
