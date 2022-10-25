@@ -45,18 +45,39 @@
 
 // Exercício 3 - Crie uma função que receba um array de inteiros e retorno o index do menor valor.
 
-let arrayTeste = [2, 3, 6, 7, 10, 0, -3];
+// let arrayTeste = [2, 3, 6, 7, 10, 0, -3];
 
-function smallestInArray(array) {
-    let smallest;
+// function smallestInArray(array) {
+//     let smallest;
+//     for (let i = 0; i < array.length; i += 1) {
+//         for (let i2 = 0; i2 < array.length; i2 += 1) {
+//             if (array[i] < array[i2]){
+//                 smallest = array[i];
+//             }
+//         }
+//     }
+//     return console.log(array.indexOf(smallest));
+// }
+
+// smallestInArray(arrayTeste);
+
+// Exercício 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+let arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+function biggestName(array) {
+
+    let biggest = arrayTest[0];
+
     for (let i = 0; i < array.length; i += 1) {
         for (let i2 = 0; i2 < array.length; i2 += 1) {
-            if (array[i] < array[i2]){
-                smallest = array[i];
+            if (array[i].length > array[i2].length && array[i].length > biggest.length) {
+                biggest = array[i];
             }
         }
     }
-    return console.log(array.indexOf(smallest));
+
+    return console.log(biggest);
 }
 
-smallestInArray(arrayTeste);
+biggestName(arrayTest);
