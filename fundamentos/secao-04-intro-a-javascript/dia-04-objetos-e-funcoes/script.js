@@ -16,7 +16,12 @@ info.recorrente = "Sim";
 
 // Exercício 3 - Faça um for/in mostrando todas as keys do obj
 
-for (let key in info) {
-    console.log(key);
-}
+// for (let key in info) {
+//     console.log(key);
+// }
 
+// Exercício 4 - Faça um novo for/in agora mostrando os valores das chaves.
+
+for (let key in info) {
+    console.log(info[key]);
+}
