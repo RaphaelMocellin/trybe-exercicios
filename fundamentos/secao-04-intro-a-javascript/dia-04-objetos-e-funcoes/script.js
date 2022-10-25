@@ -28,17 +28,34 @@ info.recorrente = "Sim";
 
 // Exercício 5 - Definir um segundo obj e imprimir as chaves dos 2 objs juntos
 
-let info2 = {
-    personagem: "Tio Patinhas",
-    origem: "Christmas on Bear Mountain, Dell’s Four Color Comics #178",
-    nota: "O último MacPatinhas",
-    recorrente: "Sim"
-};
+// let info2 = {
+//     personagem: "Tio Patinhas",
+//     origem: "Christmas on Bear Mountain, Dell’s Four Color Comics #178",
+//     nota: "O último MacPatinhas",
+//     recorrente: "Sim"
+// };
 
-for (let key in info) {
-    if (info[key] === info2[key]){
-        console.log('Ambos Recorrentes');
-    } else {
-        console.log(info[key] + " e " + info2[key])
-    }
-};
+// for (let key in info) {
+//     if (info[key] === info2[key]){
+//         console.log('Ambos Recorrentes');
+//     } else {
+//         console.log(info[key] + " e " + info2[key])
+//     }
+// };
+
+// Exercício 6 - Acessando chaves e imprimindo livro favorito de Julia.
+
+let leitor = {
+    nome: 'Julia',
+    sobrenome: 'Pessoa',
+    idade: 21,
+    livrosFavoritos: [
+      {
+        titulo: 'O Pior Dia de Todos',
+        autor: 'Daniela Kopsch',
+        editora: 'Tordesilhas',
+      },
+    ],
+  };
+
+  console.log('O livro favorito de ' + leitor.nome + " " + leitor.sobrenome + " " + 'se chama ' + "'" + leitor.livrosFavoritos[0].titulo + "'" + ".")
