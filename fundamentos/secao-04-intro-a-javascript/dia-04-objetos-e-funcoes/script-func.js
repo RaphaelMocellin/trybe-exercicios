@@ -84,5 +84,5 @@
 
 // Exercício 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-// let arraytest = [2, 3, 2, 5, 8, 2, 3];
+let arraytest = [2, 3, 2, 5, 8, 2, 3];
 
