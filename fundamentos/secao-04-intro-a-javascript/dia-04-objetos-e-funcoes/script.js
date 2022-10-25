@@ -68,4 +68,8 @@ let leitor = {
     editora: 'Rocco'
   });
 
-  console.log(leitor);
+//   console.log(leitor);
+
+  // Exercício 8 - Faça um console.log - "Julia tem x livros favoritos" - onde x é um número gerado pelo código.
+
+  console.log(leitor.nome + " tem " + leitor.livrosFavoritos.length + " livros favoritos");
