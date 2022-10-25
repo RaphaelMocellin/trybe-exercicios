@@ -6,4 +6,10 @@ let info = {
 
 // Exercício 1 - Imprima as boas vindas
 
-console.log('Bem-vinda, ' + info.personagem);
+// console.log('Bem-vinda, ' + info.personagem);
+
+// Exercício 2 - Insira uma nova key e imprima o objeto
+
+info.recorrente = "Sim";
+
+console.log(info);
