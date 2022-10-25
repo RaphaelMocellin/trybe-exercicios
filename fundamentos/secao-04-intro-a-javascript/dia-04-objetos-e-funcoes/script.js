@@ -22,6 +22,23 @@ info.recorrente = "Sim";
 
 // Exercício 4 - Faça um novo for/in agora mostrando os valores das chaves.
 
+// for (let key in info) {
+//     console.log(info[key]);
+// }
+
+// Exercício 5 - Definir um segundo obj e imprimir as chaves dos 2 objs juntos
+
+let info2 = {
+    personagem: "Tio Patinhas",
+    origem: "Christmas on Bear Mountain, Dell’s Four Color Comics #178",
+    nota: "O último MacPatinhas",
+    recorrente: "Sim"
+};
+
 for (let key in info) {
-    console.log(info[key]);
-}
+    if (info[key] === info2[key]){
+        console.log('Ambos Recorrentes');
+    } else {
+        console.log(info[key] + " e " + info2[key])
+    }
+};
