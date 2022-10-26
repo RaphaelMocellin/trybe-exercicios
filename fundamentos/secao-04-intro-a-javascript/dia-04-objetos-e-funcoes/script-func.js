@@ -84,27 +84,39 @@
 
 // Exercício 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-let arraytest = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
+// let arraytest = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
 
-let biggestCount = 0;
-let currentCount = 0;
-let indexOfBiggest;
+// let biggestCount = 0;
+// let currentCount = 0;
+// let indexOfBiggest;
 
-function mostRepeated(array) {
-    for (let number of array) {
-        for (let number2 of array) {
-          if (number === number2) {
-            currentCount = currentCount + 1;
-          }
-        }
-        if (currentCount > biggestCount) {
-          biggestCount = currentCount;
-          indexOfBiggest = number;
-        }
+// function mostRepeated(array) {
+//     for (let number of array) {
+//         for (let number2 of array) {
+//           if (number === number2) {
+//             currentCount = currentCount + 1;
+//           }
+//         }
+//         if (currentCount > biggestCount) {
+//           biggestCount = currentCount;
+//           indexOfBiggest = number;
+//         }
       
-        currentCount = 0;
-      }
+//         currentCount = 0;
+//       }
+// }
+
+// mostRepeated(arraytest);
+// console.log(indexOfBiggest);
+
+// Exercício 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+function sumFrom1(number) {
+    let currentSum = 0;
+    for (let i = 1; i <= number; i += 1) {
+        currentSum = currentSum + i;
+    }
+    console.log(currentSum);
 }
 
-mostRepeated(arraytest);
-console.log(indexOfBiggest);
+sumFrom1(10);
