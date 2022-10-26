@@ -65,8 +65,8 @@
 
 // Exercício 5 - Altere a expressão if/else utilizando ternary operator;
 
-let speed = 190;
-const speedCar = (speed) => (
-    speed >= 120 ? 'Você ultrapassou o limite de velocidade' : 'Você está na velocidade permitida'
-);
-console.log(speedCar(speed));
+// let speed = 190;
+// const speedCar = (speed) => (
+//     speed >= 120 ? 'Você ultrapassou o limite de velocidade' : 'Você está na velocidade permitida'
+// );
+// console.log(speedCar(speed));
