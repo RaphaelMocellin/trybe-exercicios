@@ -84,5 +84,27 @@
 
 // Exercício 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
 
-let arraytest = [2, 3, 2, 5, 8, 2, 3];
+let arraytest = [2, 3, 2, 5, 8, 2, 3, 5, 5, 5];
 
+let biggestCount = 0;
+let currentCount = 0;
+let indexOfBiggest;
+
+function mostRepeated(array) {
+    for (let number of array) {
+        for (let number2 of array) {
+          if (number === number2) {
+            currentCount = currentCount + 1;
+          }
+        }
+        if (currentCount > biggestCount) {
+          biggestCount = currentCount;
+          indexOfBiggest = number;
+        }
+      
+        currentCount = 0;
+      }
+}
+
+mostRepeated(arraytest);
+console.log(indexOfBiggest);
