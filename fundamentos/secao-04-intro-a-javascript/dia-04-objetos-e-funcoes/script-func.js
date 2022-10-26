@@ -111,12 +111,25 @@
 
 // Exercício 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
 
-function sumFrom1(number) {
-    let currentSum = 0;
-    for (let i = 1; i <= number; i += 1) {
-        currentSum = currentSum + i;
-    }
-    console.log(currentSum);
+// function sumFrom1(number) {
+//     let currentSum = 0;
+//     for (let i = 1; i <= number; i += 1) {
+//         currentSum = currentSum + i;
+//     }
+//     console.log(currentSum);
+// }
+
+// sumFrom1(10);
+
+// Exercício 7 - Verificar se o final da palavra é igual.
+
+function verificaFimPalavra(word1, word2) {
+    return console.log(word1.endsWith(word2));
 }
 
-sumFrom1(10);
+verificaFimPalavra('Trybe', 'be');
+verificaFimPalavra('Trybe', 'eb');
+verificaFimPalavra('Raphael', 'phael');
+verificaFimPalavra('Curso', 'so');
+verificaFimPalavra('Stallone', 'lone');
+verificaFimPalavra('joaofernando', 'fernan');
