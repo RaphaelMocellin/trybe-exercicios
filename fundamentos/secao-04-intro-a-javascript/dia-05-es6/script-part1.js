@@ -11,3 +11,22 @@ pessoa = {
 }; // Altere essa estrutura para corrigir o erro.
 console.log("Nome:", pessoa.nome);
 console.log("Idade:", pessoa.idade);
+
+const pessoa2 = {
+  nome: "Rapha",
+  idade: 34,
+};
+
+pessoa2.nome = "Vivi";
+pessoa2.idade = 32;
+
+// Altere essa estrutura para corrigir o erro.
+console.log("Nome:", pessoa2.nome);
+console.log("Idade:", pessoa2.idade);
+
+// Exercício 2 - Transforme a função numeroAleatorio em uma arrow function;
+
+function numeroAleatorio() {
+    return Math.random()
+  }
+  console.log(numeroAleatorio());
