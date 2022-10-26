@@ -16,4 +16,20 @@ const substituaX = (nome) => {
   return newPhrase.join(" ");
 };
 
-substituaX("Rapha");
+let joinedNewPhrase = substituaX("Rapha");
+
+// Função 2: Escreva uma função que irá receber o retorno da Função 1 por parâmetro e retornará uma nova string.
+
+const minhasSkills = (message) => {
+    const skills = ['HTML', 'CSS', 'Git'];
+
+    let finalMessage = `${message}
+    Minhas três principais habilidades são:
+    -${skills[0]}
+    -${skills[1]}
+    -${skills[2]}`
+
+    console.log(finalMessage);
+}
+
+minhasSkills(joinedNewPhrase);
