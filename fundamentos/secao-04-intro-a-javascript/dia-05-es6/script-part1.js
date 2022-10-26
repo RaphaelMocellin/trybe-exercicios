@@ -31,6 +31,19 @@
 // }
 // console.log(numeroAleatorio());
 
-const numeroAleatorio = () => Math.random();
+// const numeroAleatorio = () => Math.random();
 
-console.log(numeroAleatorio());
+// console.log(numeroAleatorio());
+
+// Exercício 3 - Transforme a função hello em uma arrow function
+
+// function hello(nome) {
+//   return `Olá, ${nome}!`;
+// }
+// let nome = "Ivan";
+// console.log(hello(nome));
+
+// const hello = (nome) => `Olá, ${nome}!`;
+
+// let nome = "Ivan";
+// console.log(hello(nome));
