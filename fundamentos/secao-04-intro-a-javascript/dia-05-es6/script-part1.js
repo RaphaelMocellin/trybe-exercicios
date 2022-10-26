@@ -57,8 +57,16 @@
 // let sobrenome = "Pires";
 // console.log(nomeCompleto(nome, sobrenome));
 
-let nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
+// let nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
 
-let nome = "Ivan";
-let sobrenome = "Pires";
-console.log(nomeCompleto(nome, sobrenome));
+// let nome = "Ivan";
+// let sobrenome = "Pires";
+// console.log(nomeCompleto(nome, sobrenome));
+
+// Exercício 5 - Altere a expressão if/else utilizando ternary operator;
+
+let speed = 190;
+const speedCar = (speed) => (
+    speed >= 120 ? 'Você ultrapassou o limite de velocidade' : 'Você está na velocidade permitida'
+);
+console.log(speedCar(speed));
