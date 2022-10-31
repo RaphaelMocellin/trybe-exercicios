@@ -123,6 +123,18 @@
         for (let h3 of allH3s) {
             h3.className = 'description';
         }
+
+        // Removendo a section com className left-content
+        let targetSections = document.querySelectorAll('section');
+
+        for (let section of targetSections) {
+            if (section.className.includes('left')) {
+                tagMain.removeChild(section);
+            }
+        }
+
+        // Centralizando a section com className right-content
+        rightSection.style.marginRight = 'auto';
     </script>
   </body>
 </html>
