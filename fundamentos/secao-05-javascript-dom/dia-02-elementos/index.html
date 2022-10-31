@@ -87,6 +87,12 @@
         let rightSection = document.createElement('section');
         rightSection.className = 'right-content';
         tagMain.appendChild(rightSection);
+
+        // Adicionando nova img dentro do left content
+        let tagImg = document.createElement('img');
+        tagImg.src = 'https://picsum.photos/200';
+        tagImg.className = 'small-image';
+        leftSection.appendChild(tagImg);
     </script>
   </body>
 </html>
