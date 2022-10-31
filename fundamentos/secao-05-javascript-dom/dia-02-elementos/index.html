@@ -105,6 +105,15 @@
             tagLi.innerHTML = numero;
             tagUl.appendChild(tagLi);
         }
+
+        // Adicionando 3 tags h3 como filhas do main
+        let titulosH3 = ['primeiro h3', 'segundo h3', 'terceiro h3'];
+
+        for (let titulo of titulosH3) {
+            let tagH3 = document.createElement('h3');
+            tagH3.innerText = titulo;
+            tagMain.appendChild(tagH3);
+        }
     </script>
   </body>
 </html>
