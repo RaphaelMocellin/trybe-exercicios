@@ -57,11 +57,16 @@
   </head>
   <body>
     <script>
+        // Adicionando h1
         let titulo = document.createElement('h1');
         titulo.innerText = 'Exercício - JavaScript DOM';
         let corpo = document.querySelector('body');
         corpo.appendChild(titulo);
 
+        // Adicionando tag main
+        let tagMain = document.createElement('main');
+        tagMain.className = 'main-content';
+        corpo.appendChild(tagMain);
     </script>
   </body>
 </html>
