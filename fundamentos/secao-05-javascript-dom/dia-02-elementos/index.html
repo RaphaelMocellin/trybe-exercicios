@@ -117,6 +117,12 @@
 
         // Adicionando a classe title no h1
         titulo.className = 'title';
+
+        // Adicionando a classe description nas tags h3
+        let allH3s = document.querySelectorAll('h3');
+        for (let h3 of allH3s) {
+            h3.className = 'description';
+        }
     </script>
   </body>
 </html>
