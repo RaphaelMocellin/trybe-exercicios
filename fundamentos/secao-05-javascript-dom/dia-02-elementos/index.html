@@ -136,8 +136,19 @@
         // Centralizando a section com className right-content
         rightSection.style.marginRight = 'auto';
 
-        // trocando a cor de fundo do elemento pai da center-content
+        // Trocando a cor de fundo do elemento pai da center-content
         tagSection.parentElement.style.backgroundColor = 'green';
+
+        // Removendo os dois ultimos elemtnos da lista criada no passo 8
+        let targetLi = document.querySelectorAll('li');
+        console.log(targetLi);
+
+        for (let li of targetLi) {
+            if (li.innerText.includes('nove') || li.innerText.includes('dez')) {
+                li.remove();
+            }
+        }
+
     </script>
   </body>
 </html>
