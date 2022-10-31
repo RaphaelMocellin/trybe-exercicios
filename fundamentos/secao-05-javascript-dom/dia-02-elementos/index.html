@@ -93,6 +93,18 @@
         tagImg.src = 'https://picsum.photos/200';
         tagImg.className = 'small-image';
         leftSection.appendChild(tagImg);
+
+        // Adicionando lista de valores por extenso na right content
+        let numerosExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+        let tagUl = document.createElement('ul');
+        rightSection.appendChild(tagUl);
+
+        for (let numero of numerosExtenso) {
+            let tagLi = document.createElement('li');
+            tagLi.innerHTML = numero;
+            tagUl.appendChild(tagLi);
+        }
     </script>
   </body>
 </html>
