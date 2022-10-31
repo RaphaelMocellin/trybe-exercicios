@@ -72,6 +72,11 @@
         let tagSection = document.createElement('section');
         tagSection.className = 'center-content';
         tagMain.appendChild(tagSection);
+
+        // Adicionando tag p como filho do section
+        let tagP = document.createElement('p');
+        tagP.innerText = 'Algum texto';
+        tagSection.appendChild(tagP);
     </script>
   </body>
 </html>
