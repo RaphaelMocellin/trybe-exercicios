@@ -103,3 +103,30 @@ const changeFridayText = () => {
 
 let fridayBtn = document.querySelector("#btn-friday");
 fridayBtn.addEventListener("click", changeFridayText);
+
+// Parte 6
+
+const createZoom = () => {
+    let allDays = document.querySelectorAll('.day');
+
+    for (let day of allDays) {
+        day.addEventListener('mouseover', (event) => {
+            event.target.style.scale = 1.5;
+        })
+    }
+}
+
+const leaveZoom = () => {
+    let allDays = document.querySelectorAll('.day');
+
+    for (let day of allDays) {
+        day.addEventListener('mouseleave', (event) => {
+            event.target.style.scale = 1;
+        })
+    }
+}
+
+createZoom();
+leaveZoom();
+
+// Parte 7
