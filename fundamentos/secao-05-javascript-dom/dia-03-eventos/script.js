@@ -45,3 +45,20 @@ const createBtn = (name) => {
 }
 
 createBtn('Feriados');
+
+const changeHolidayColor = () => {
+    let allHolidays = document.querySelectorAll('.holiday')
+    
+    for (let holiday of allHolidays) {
+        if (holiday.classList.contains('color')) {
+            holiday.style.color = 'rgb(119,119,119)';
+            holiday.classList.toggle('color');
+        } else {
+            holiday.style.color = 'rgb(300,0,0)';
+            holiday.classList.toggle('color');
+        }
+    }
+}
+
+let holidayBtn = document.querySelector('#btn-holiday');
+holidayBtn.addEventListener('click', changeHolidayColor);
