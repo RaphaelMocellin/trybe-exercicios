@@ -34,4 +34,14 @@ const createNumberDays = () => {
 }
 
 createNumberDays();
-  
+
+const createBtn = (name) => {
+    let btn = document.createElement('button');
+    btn.innerText = name;
+    btn.id = 'btn-holiday';
+
+    let btnContainer = document.querySelector('.buttons-container');
+    btnContainer.appendChild(btn);
+}
+
+createBtn('Feriados');
