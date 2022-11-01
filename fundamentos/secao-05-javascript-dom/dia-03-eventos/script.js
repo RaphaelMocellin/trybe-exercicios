@@ -204,6 +204,19 @@ const addCompro = () => {
             comproList.appendChild(createCompro);
         } 
     })
+
+    taskInput.addEventListener('keypress', (event) => {
+        if (event.key == 'Enter') {
+            if (taskInput.value.length <= 0) {
+                alert('Erro! Nada foi digitado!')
+            } else {
+                let createCompro = document.createElement('div');
+                createCompro.innerText = taskInput.value;
+                comproList.appendChild(createCompro);
+                taskInput.value = '';
+            } 
+        }
+    })
 }
 
 addCompro();
