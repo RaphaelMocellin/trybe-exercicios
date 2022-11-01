@@ -130,3 +130,15 @@ createZoom();
 leaveZoom();
 
 // Parte 7
+
+const addTask = (task) => {
+    let createSpan = document.createElement('span');
+    createSpan.innerText = task;
+
+    let taskList = document.querySelector('.my-tasks');
+    taskList.appendChild(createSpan);
+}
+
+addTask('Cozinhar');
+
+// Parte 8
