@@ -13,6 +13,8 @@ const createDaysOfTheWeek = () => {
   
   createDaysOfTheWeek();
   
+// Parte 1
+
 const createNumberDays = () => {
     const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const daysList = document.querySelector('#days');
@@ -35,16 +37,20 @@ const createNumberDays = () => {
 
 createNumberDays();
 
-const createBtn = (name) => {
+// Parte 2
+
+const createBtn = (name, id) => {
     let btn = document.createElement('button');
     btn.innerText = name;
-    btn.id = 'btn-holiday';
+    btn.id = id;
 
     let btnContainer = document.querySelector('.buttons-container');
     btnContainer.appendChild(btn);
 }
 
-createBtn('Feriados');
+createBtn('Feriados', 'btn-holiday');
+
+// Parte 3
 
 const changeHolidayColor = () => {
     let allHolidays = document.querySelectorAll('.holiday')
@@ -62,3 +68,10 @@ const changeHolidayColor = () => {
 
 let holidayBtn = document.querySelector('#btn-holiday');
 holidayBtn.addEventListener('click', changeHolidayColor);
+
+// Parte 4
+
+createBtn('Sexta-feira', 'btn-friday');
+
+// Parte 5
+
