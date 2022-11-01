@@ -142,3 +142,16 @@ const addTask = (task) => {
 addTask('Cozinhar');
 
 // Parte 8
+
+const createLegend = (color) => {
+    let createDiv = document.createElement('div');
+    createDiv.classList.add('task');
+    createDiv.style.backgroundColor = color;
+
+    let taskList = document.querySelector('.my-tasks');
+    taskList.appendChild(createDiv);
+}
+
+createLegend('orange');
+
+// Parte 9
