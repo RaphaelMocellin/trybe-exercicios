@@ -146,6 +146,7 @@ addTask('Cozinhar');
 const createLegend = (color) => {
     let createDiv = document.createElement('div');
     createDiv.classList.add('task');
+    createDiv.classList.add('selected');
     createDiv.style.backgroundColor = color;
 
     let taskList = document.querySelector('.my-tasks');
@@ -169,3 +170,23 @@ const selectTask = (event) => {
 selectTask();
 
 // Parte 10
+
+const changeDayColor = () => {
+    let getColor = document.querySelector('.selected').style.backgroundColor;
+
+    let allDays = document.querySelectorAll('.day');
+
+    for (let day of allDays) {
+        day.addEventListener('click', (event) => {
+            if (event.target.style.color == getColor) {
+                event.target.style.color = 'rgb(119,119,119)';
+            } else {
+                event.target.style.color = getColor;
+            } 
+        })
+    }
+}
+
+changeDayColor();
+
+// Bonus
