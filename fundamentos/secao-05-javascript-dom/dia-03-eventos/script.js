@@ -190,3 +190,20 @@ const changeDayColor = () => {
 changeDayColor();
 
 // Bonus
+
+const addCompro = () => {
+    let addBtn = document.querySelector('#btn-add');
+    let taskInput = document.querySelector('#task-input');
+    let comproList = document.querySelector('.input-container');
+    addBtn.addEventListener('click', () => {
+        if (taskInput.value.length <= 0) {
+            alert('Erro! Nada foi digitado!')
+        } else {
+            let createCompro = document.createElement('div');
+            createCompro.innerText = taskInput.value;
+            comproList.appendChild(createCompro);
+        } 
+    })
+}
+
+addCompro();
