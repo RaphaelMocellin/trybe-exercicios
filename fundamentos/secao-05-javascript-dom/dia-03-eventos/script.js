@@ -155,3 +155,17 @@ const createLegend = (color) => {
 createLegend('orange');
 
 // Parte 9
+
+const selectTask = (event) => {
+    let allTasks = document.querySelectorAll('.task');
+
+    for (let task of allTasks) {
+        task.addEventListener('click', () => {
+            task.classList.toggle('selected');
+        })
+    }
+}
+
+selectTask();
+
+// Parte 10
