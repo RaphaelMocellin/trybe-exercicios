@@ -37,3 +37,30 @@ createBtn('3.0', 'line-3-btn', 'line-height');
 // Criando botões para tipo da fonte
 createBtn('Arial', 'font-arial', 'font-family');
 createBtn('Times New Roman', 'font-arial', 'font-family');
+
+// Adicionando event listner para cor de fundo
+
+document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
+
+const changeBackgroundColorHandler = () => {
+    let backgroundColorBtns = document.querySelectorAll('#btn-background-color button');
+
+    for (let btn of backgroundColorBtns) {
+        btn.addEventListener('click', (event) => {
+            localStorage.setItem('backgroundColor', event.target.innerText);
+            let getColor = localStorage.getItem('backgroundColor');
+            document.body.style.backgroundColor = getColor;
+        })
+    }
+}
+
+changeBackgroundColorHandler();
+
+// Adicionando event listner para cor do texto
+
+const changeTextColorHandler = () => {
+    let textColorBtns = document.querySelectorAll('#text-color button')
+    console.log(textColorBtns);
+}
+
+changeTextColorHandler();
