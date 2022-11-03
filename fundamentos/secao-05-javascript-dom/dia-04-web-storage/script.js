@@ -78,3 +78,24 @@ const changeTextColorHandler = () => {
 }
 
 changeTextColorHandler();
+
+// Adicionando event listner para mudar o tamanho da fonte
+for (let text of allText) {
+    text.style.fontSize = localStorage.getItem('fontSize');
+}
+
+const changeFontSize = () => {
+    let textColorBtns = document.querySelectorAll('#font-size button')
+
+    for (let btn of textColorBtns) {
+        btn.addEventListener('click', (event) => {
+            localStorage.setItem('fontSize', event.target.innerText);
+            let getSize = localStorage.getItem('fontSize');
+            for (let text of allText) {
+                text.style.fontSize = getSize;
+            }
+        })
+    }
+}
+
+changeFontSize();
