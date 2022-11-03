@@ -85,9 +85,9 @@ for (let text of allText) {
 }
 
 const changeFontSize = () => {
-    let textColorBtns = document.querySelectorAll('#font-size button')
+    let fontSizeBtns = document.querySelectorAll('#font-size button');
 
-    for (let btn of textColorBtns) {
+    for (let btn of fontSizeBtns) {
         btn.addEventListener('click', (event) => {
             localStorage.setItem('fontSize', event.target.innerText);
             let getSize = localStorage.getItem('fontSize');
@@ -99,3 +99,25 @@ const changeFontSize = () => {
 }
 
 changeFontSize();
+
+// Adicionando event listner para mudar o espaçamento entre linhas
+
+for (let text of allText) {
+    text.style.lineHeight = localStorage.getItem('lineHeight');
+}
+
+const changeLineHeight = () => {
+    let lineHeightBtns = document.querySelectorAll('#line-height button');
+
+    for (let btn of lineHeightBtns) {
+        btn.addEventListener('click', (event) => {
+            localStorage.setItem('lineHeight', event.target.innerText);
+            let getLine = localStorage.getItem('lineHeight');
+            for (let text of allText) {
+                text.style.lineHeight = getLine;
+            }
+        })
+    }
+}
+
+changeLineHeight();
