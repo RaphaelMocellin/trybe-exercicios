@@ -143,3 +143,7 @@ const changeFontFamily = () => {
 }
 
 changeFontFamily();
+
+// Testando getItem
+
+let teste = localStorage.getItem('teste');
