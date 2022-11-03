@@ -121,3 +121,25 @@ const changeLineHeight = () => {
 }
 
 changeLineHeight();
+
+// Adicionando event listner para mudar o font family
+
+for (let text of allText) {
+    text.style.fontFamily = localStorage.getItem('fontFamily');
+}
+
+const changeFontFamily = () => {
+    let fontFamilyBtns = document.querySelectorAll('#font-family button');
+
+    for (let btn of fontFamilyBtns) {
+        btn.addEventListener('click', (event) => {
+            localStorage.setItem('fontFamily', event.target.innerText);
+            let getFont = localStorage.getItem('fontFamily');
+            for (let text of allText) {
+                text.style.fontFamily = getFont;
+            }
+        })
+    }
+}
+
+changeFontFamily();
