@@ -39,7 +39,6 @@ createBtn('Arial', 'font-arial', 'font-family');
 createBtn('Times New Roman', 'font-arial', 'font-family');
 
 // Adicionando event listner para cor de fundo
-
 document.body.style.backgroundColor = localStorage.getItem('backgroundColor');
 
 const changeBackgroundColorHandler = () => {
@@ -57,10 +56,25 @@ const changeBackgroundColorHandler = () => {
 changeBackgroundColorHandler();
 
 // Adicionando event listner para cor do texto
+let allText = document.querySelectorAll('.text');
+
+for (let text of allText) {
+    text.style.color = localStorage.getItem('textColor');
+}
+
 
 const changeTextColorHandler = () => {
     let textColorBtns = document.querySelectorAll('#text-color button')
-    console.log(textColorBtns);
+
+    for (let btn of textColorBtns) {
+        btn.addEventListener('click', (event) => {
+            localStorage.setItem('textColor', event.target.innerText);
+            let getColor = localStorage.getItem('textColor');
+            for (let text of allText) {
+                text.style.color = getColor;
+            }
+        })
+    }
 }
 
 changeTextColorHandler();
