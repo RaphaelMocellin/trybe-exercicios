@@ -8,12 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- pickaday library files -->
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <!-- just validate -->
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="" method="get" id="my-form">
         <label for="name-input">Nome Completo:
-            <input class="form-control" type="text" id="name-input" name="full-name" minlength="10" maxlength="40">
+            <input class="form-control" type="text" id="name-input" name="full-name">
         </label>
         <br>
         <br>
@@ -42,7 +47,7 @@
         <br>
         <label for="date-input">Qual a melhor data para realizar sua viagem?
             <br>
-            <input class="form-control" type="date" name="date-input" id="date-input">
+            <input class="" type="text" name="date-input" id="datepicker">
         </label>
         <br>
         <br>
@@ -56,9 +61,16 @@
         </label>
         <br>
         <br>
-        <button class="btn btn-success" type="submit" id="submit-btn" disabled>Enviar</button>
+        <button class="btn btn-success" type="submit" id="submit-btn">Enviar</button>
         <button class="btn btn-secondary" type="reset" id="reset-btn">Limpar</button>
     </form>
+    <script src="pikaday.js"></script>
+<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+</script>
+<script>
+    const validate = new window.JustValidate('#my-form');
+  </script>
     <script src="script.js"></script>
 </body>
 </html>
