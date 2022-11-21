@@ -1,4 +1,4 @@
-const {myRemove, myFizzBuzz} = require('./script');
+const {myRemove, myFizzBuzz, mapString, encode, decode} = require('./script');
 
 describe('Testing myRemove function', () => {
     test('Testing if it removes the right element', () => {
@@ -10,7 +10,7 @@ describe('Testing myRemove function', () => {
     test('Testing if it removes the right element', () => {
         expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4]);
     })
-})
+});
 
 describe('testing myFizzBuzz function', () => {
     test('Testing if returns fizzbuzz', () => {
@@ -27,5 +27,34 @@ describe('testing myFizzBuzz function', () => {
     });
     test('Testing if returns false', () => {
         expect(myFizzBuzz('bla')).toBe(false);
+    });
+});
+
+describe('testing mapString, encode and decode functions', () => {
+    test('Testing if encode is a function', () => {
+        expect(encode).toBeInstanceOf(Function);
+    });
+    test('Testing if decode is a function', () => {
+        expect(decode).toBeInstanceOf(Function);
+    });
+    test('Testing if encode converts a,e,i,o,u into 1,2,3,4,5', () => {
+        expect(encode('aeiou')).toBe('12345');
+    });
+    test('Testing if decode converts 1,2,3,4,5 into a,e,i,o,u', () => {
+        expect(decode('12345')).toBe('aeiou');
+    });
+    test('Testing if encode converts other consoants', () => {
+        expect(encode('qwrty')).not.toContain('12345');
+    });
+    test('Testing if encode converts other numbers', () => {
+        expect(decode('67890')).not.toContain('aeiou');
+    });
+    test('Testing if both string have the same length (encoding)', () => {
+        const testParam = 'testecerto';
+        expect(encode(testParam)).toHaveLength(testParam.length);
+    });
+    test('Testing if both string have the same length (decoding)', () => {
+        const testParam = 'testecerto';
+        expect(decode(testParam)).toHaveLength(testParam.length);
     });
 })
