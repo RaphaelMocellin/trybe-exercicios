@@ -1,0 +1,68 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  @media screen and (max-width: 677px) {
+    body {
+        margin: 25px;
+    }
+    header {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+    .main-content h1 {
+        text-align: center;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+  }
+
+  @media screen and (min-width:678px) and (max-width: 1199px) {
+    body {
+        margin: 25px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+    .main-content h1 {
+        text-align: center;
+    }
+
+    footer h3 {
+        text-align: center;
+    }
+
+    .asiders {
+        display: flex;
+    }
+
+    .aside-one {
+        width: 50%;
+    }
+
+    .aside-two {
+        width: 50%;
+    }
+  }
