@@ -4,7 +4,7 @@
   "description": "|Este repositório tem como objetivo armazenar os exercícios elaborados durante o curso na Trybe!",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
