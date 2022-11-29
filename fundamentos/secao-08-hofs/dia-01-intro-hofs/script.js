@@ -27,4 +27,27 @@ const loterry = (betNumber, callback) => {
     return console.log(result);
 }
 
-loterry(1, selectedNumber);
+// loterry(1, selectedNumber);
+
+//Corretor Automático de exame
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+const compareArrays = (array1, array2) => {
+    let note = 0;
+    array1.forEach((element, index) => {
+        if(element === array2[index]) {
+            note += 1;
+        } else if(array2[index] !== 'N.A') {
+            note -= 0.5;
+        }
+    })
+    return note;
+};
+
+const giveNote = (correct, student, callback)  => {
+    const finalNote = callback(correct, student);
+    return console.log(finalNote);
+};
+
+giveNote(RIGHT_ANSWERS, STUDENT_ANSWERS, compareArrays);
