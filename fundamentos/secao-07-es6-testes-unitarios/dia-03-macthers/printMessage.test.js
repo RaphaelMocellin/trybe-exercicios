@@ -6,6 +6,7 @@ describe('Testes da função print message', () => {
     })
     test('veriricando resposta da função', () => {
         expect(printMessage(info)).toMatch('Boas vindas');
+        expect(printMessage(info)).toMatch(info.personagem);
     })
     test('verificando se a função lança erros', () => {
         expect(() => { printMessage() }).toThrow();
