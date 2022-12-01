@@ -68,13 +68,46 @@ const countries = [
 ];
 
 // Exercicio 1 - Calcule a quantidade total da população de todos os países
-const expectedResult = 120797034;
+// const expectedResult = 120797034;
 
 const getPopulation = (arr) => {
     // retorne o seu código aqui
     return arr.reduce((acc, cur) => {
-        return acc + cur.population
+        return acc + cur.population;
     }, 0);
 }
 
-console.log(getPopulation(countries));
+// console.log(getPopulation(countries));
+
+// Exercicio 2 - Calcule a area total de todos os paises
+// const expectedResult = 4311757;
+
+const getTotalArea = (arr) => {
+    // retorne seu código aqui
+    return arr.reduce((acc, cur) => {
+        return acc + cur.area;
+    }, 0)
+}
+
+// console.log(getTotalArea(countries));
+
+// Exercício 3 - Encontre o país com o maior nome
+// const expectedResult = {
+//     name: 'American Samoa',
+//     region: 'Oceania',
+//     currencies: [{ code: 'USD', name: 'United States Dollar' }],
+//     capital: 'Pago Pago',
+//     population: 55197,
+//     area: 199
+// }
+
+const longestName = (arr) => {
+    // retorne seu código aqui
+    return arr.reduce((acc, cur) => {
+        // console.log(acc);
+        // console.log(cur);
+        return acc.name.length > cur.name.length ? acc : cur;
+    })
+}
+
+console.log(longestName(countries));
