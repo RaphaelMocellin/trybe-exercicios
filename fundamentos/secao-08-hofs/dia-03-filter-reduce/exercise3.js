@@ -62,12 +62,26 @@ const books = [
 ];
 
 // Adicione o código do exercício aqui:
+// const expectedResult = ['Fundação', 'Duna'];
+
+// const booksByAuthorBirthYear = (birthYear, arr) => {
+//     // escreva seu código aqui
+//     const filteredYear = arr.filter((element) => element.author.birthYear === birthYear);
+//     return filteredYear.map((element) => element.name);
+// }
+// const result = booksByAuthorBirthYear(1920, books);
+// console.log(result);
+
+// Using reduce
 const expectedResult = ['Fundação', 'Duna'];
 
-const booksByAuthorBirthYear = (birthYear, arr) => {
+const booksByAuthorBirthYear = (birthYear) => {
     // escreva seu código aqui
-    const filteredYear = arr.filter((element) => element.author.birthYear === birthYear);
-    return filteredYear.map((element) => element.name);
+    return books.reduce((acc, cur) => {
+        if (cur.author.birthYear === birthYear) acc.push(cur.name);
+        return acc;
+    }, [])
+
 }
-const result = booksByAuthorBirthYear(1920, books);
+const result = booksByAuthorBirthYear(1920);
 console.log(result);
