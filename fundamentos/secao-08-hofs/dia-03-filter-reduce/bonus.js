@@ -108,4 +108,23 @@ const averageAge = (array) => {
     return result.reduce((acc, cur) => acc += cur) / result.length;
 }
 
-console.log(averageAge(books));
+averageAge(books);
+
+// Exercicio 4 - Encontre o livro com o maior nome.
+// const expectedResult = {
+//     id: 1,
+//     name: 'As Crônicas de Gelo e Fogo',
+//     genre: 'Fantasia',
+//     author: {
+//         name: 'George R. R. Martin',
+//         birthYear: 1948,
+//     },
+//     releaseYear: 1991,
+// };
+
+const longestNamedBook = (array) => {
+    // retorne seu código aqui
+    return array.reduce((acc, cur) => acc.name.length > cur.name.length ? acc : cur);
+}
+
+console.log(longestNamedBook(books));
